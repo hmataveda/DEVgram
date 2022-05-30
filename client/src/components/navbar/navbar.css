@@ -1,0 +1,47 @@
+.icon {
+  font-family: "Dancing Script", cursive;
+  /* font-family: "Lobster", cursive; */
+  font-size: 40px;
+  font-weight: 1000;
+  /* vertical-align: baseline; */
+}
+input {
+  border: 0;
+  outline: 0;
+  width: 290px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 2px rgb(199, 195, 195);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.navbar {
+  background-color: rgba(165, 53, 163, 0.24);
+  border: 2px;
+}
+.createButton {
+  border: 0;
+  border: 1px solid;
+  padding: 5px;
+  margin: 0px 30px;
+  width: 70px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 130px;
+}
+.bi {
+  font-size: 30px;
+  cursor: pointer;
+}
+span {
+  /* vertical-align: top; */
+  font-family: "Dancing Script";
+  font-size: large;
+  font-weight: 600;
+}
+.logout {
+  vertical-align: baseline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}

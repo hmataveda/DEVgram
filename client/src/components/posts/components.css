@@ -1,0 +1,42 @@
+.posts {
+  background-color: rgb(248, 249, 250);
+}
+.post {
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  box-shadow: rgba(68, 62, 62, 0.856) 0px 2px 8px 0px;
+}
+.posts img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* h1 {
+  text-decoration: underline;
+} */
+.title {
+  font-size: 20px;
+  font-family: "Redressed", cursive;
+  cursor: default;
+  font-weight: 400;
+}
+.face {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: rgba(85, 66, 42, 0.329);
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.author {
+  cursor: pointer;
+}
+
+.icons .bi {
+  font-size: 15px;
+  font-weight: 200;
+}
+.singlePost {
+  height: 300px;
+  border: 2px solid black;
+}
