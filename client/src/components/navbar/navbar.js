@@ -43,7 +43,12 @@ function Navbar() {
           </form>
         </div>
         <div className="col-5 mt-3 ">
-          <button className="createButton">Create</button>
+          <button
+            className="createButton"
+            onClick={() => navigate("/post/new")}
+          >
+            Create
+          </button>
           <i
             className="bi bi-house-door-fill"
             onClick={() => navigate("/posts")}

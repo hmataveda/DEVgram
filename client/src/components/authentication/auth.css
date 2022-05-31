@@ -1,6 +1,7 @@
 .register .row,
 .login .row {
-  background-color: #58a7a4b9;
+  /* background-color: #a758a2b9; */
+  background-color: #5890a7;
   border-radius: 30px;
   box-shadow: 5px 5px 5px;
 }
@@ -27,7 +28,7 @@
 }
 
 .inp {
-  height: 50px;
+  height: 40px;
   width: 50%;
   border: none;
   outline: none;
@@ -41,8 +42,8 @@
 }
 
 .btn1 {
-  height: 50px;
-  width: 35%;
+  height: 40px;
+  width: 30%;
   border: none;
   outline: none;
   border-radius: 50px;

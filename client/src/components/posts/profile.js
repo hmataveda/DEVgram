@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-import { useParams, useOutletContext } from "react-router-dom";
+import { useParams, useOutletContext, useNavigate } from "react-router-dom";
 
 function Author() {
   const { name: authorName } = useParams();
   console.log("name", authorName);
+  const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const user = useOutletContext();
   console.log("user from context", user);
@@ -36,11 +37,21 @@ function Author() {
       <div className="col-4" key={post._id}>
         <div className=" mx-2 mt-4 post pb-3 ">
           <div className="pt-3 px-4 d-flex justify-content-between">
-            <span className="title ">{post.title}</span>
+            <span
+              className="title "
+              onClick={() => navigate(`/post/${post._id}`, { state: post })}
+            >
+              {post.title}
+            </span>
             {canUpdatePosts && (
               <span className="icons ">
                 <i className="bi bi-trash-fill me-2"></i>
-                <i className="bi bi-pencil-square"></i>
+                <i
+                  className="bi bi-pencil-square"
+                  onClick={() =>
+                    navigate(`/post/update/${post._id}`, { state: post })
+                  }
+                ></i>
               </span>
             )}
           </div>

@@ -36,18 +36,19 @@ function Register() {
           <div className="row g-0">
             <div className="col-lg-5">
               <img
-                src="https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="initial image"
-                height="700"
+                src="https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg"
+                // src="https://dailytimes.com.pk/assets/uploads/2022/02/25/Best-Free-Online-Information-Technology-Courses.jpg"
+                height="600"
                 width="600"
                 // className="img-fluid"
               />
             </div>
-            <div className="col-lg-7 text-center py-5 ">
+            <div className="col-lg-7 text-center pb-3 pt-4 ">
               <h1>Techgram</h1>
 
               <form onSubmit={handleSubmit}>
-                <div className="form-row py-3 pt-5 ">
+                <div className="form-row py-3 pt-3 ">
                   <div className=" offset-1 col-lg-10 ">
                     <input
                       type="text"

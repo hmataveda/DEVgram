@@ -39,7 +39,9 @@ function AllPosts() {
               navigate(`/author/${post.createdBy.userName}`);
             }}
           >
-            <span className="face">V</span>
+            <span className="face">
+              {post.createdBy.userName[0].toUpperCase()}
+            </span>
             {post.createdBy.userName}
           </div>
           <div className="description pb-3 px-3">{post.description}</div>

@@ -15,13 +15,13 @@
 .title {
   font-size: 20px;
   font-family: "Redressed", cursive;
-  cursor: default;
+  cursor: pointer;
   font-weight: 400;
 }
 .face {
   width: 100px;
   padding: 10px 15px;
-  background-color: rgba(85, 66, 42, 0.329);
+  background-color: rgba(62, 184, 166, 0.678);
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
   margin-right: 10px;
@@ -39,4 +39,26 @@
 .singlePost {
   height: 300px;
   border: 2px solid black;
+}
+
+.editForm label {
+  width: 20%;
+  text-align: end;
+  margin: 10px 20px;
+}
+
+.editForm input {
+  padding: 5px 15px;
+  width: 35%;
+}
+
+.editForm input[type="submit"] {
+  width: 150px;
+  margin: 30px 0;
+  /* background-color: chocolate; */
+  background-color: rgba(251, 9, 9, 0.696);
+}
+
+.editForm {
+  box-shadow: 2px 2px 2px 2px rgb(199, 195, 195);
 }
