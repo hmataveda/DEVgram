@@ -18,8 +18,11 @@ function Form(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    handlesubmit(post, oldPost._id);
+    if (oldPost) {
+      handlesubmit(post, oldPost._id || null);
+    } else {
+      handlesubmit(post);
+    }
   };
   return (
     <div className="row justify-content-center mt-5 pt-3 text-center">

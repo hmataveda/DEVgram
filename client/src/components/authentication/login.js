@@ -54,7 +54,7 @@ function Login() {
                 <div className="form-row py-3">
                   <div className="offset-1 col-lg-10">
                     <input
-                      type="text"
+                      type="password"
                       className="inp  px-4"
                       placeholder="Password"
                       name="password"

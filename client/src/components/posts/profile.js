@@ -32,6 +32,18 @@ function Author() {
       });
   }, []);
 
+  const handleDelete = (id) => {
+    axios
+      .delete(`http://localhost:8000/api/post/${id}`, { withCredentials: true })
+      .then((response) => {
+        console.log("Post deleted successfully", response.data);
+        navigate("/posts");
+      })
+      .catch((err) => {
+        console.log("Error while deleting the post", err);
+      });
+  };
+
   const post = posts.map((post) => {
     return (
       <div className="col-4" key={post._id}>
@@ -45,7 +57,11 @@ function Author() {
             </span>
             {canUpdatePosts && (
               <span className="icons ">
-                <i className="bi bi-trash-fill me-2"></i>
+                <i
+                  className="bi bi-trash-fill me-2"
+                  onClick={() => handleDelete(post._id)}
+                ></i>
+
                 <i
                   className="bi bi-pencil-square"
                   onClick={() =>

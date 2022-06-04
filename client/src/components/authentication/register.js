@@ -45,7 +45,7 @@ function Register() {
               />
             </div>
             <div className="col-lg-7 text-center pb-3 pt-4 ">
-              <h1>Techgram</h1>
+              <h1 className="text-light">Techgram</h1>
 
               <form onSubmit={handleSubmit}>
                 <div className="form-row py-3 pt-3 ">
@@ -75,7 +75,7 @@ function Register() {
                 <div className="form-row py-3">
                   <div className="offset-1 col-lg-10">
                     <input
-                      type="text"
+                      type="password"
                       className="inp  px-4"
                       placeholder="Password"
                       value={password}
@@ -87,7 +87,7 @@ function Register() {
                 <div className="form-row py-3">
                   <div className="offset-1 col-lg-10">
                     <input
-                      type="text"
+                      type="password"
                       className="inp px-4"
                       placeholder="Confirm Password"
                       name="confirmPassword"
